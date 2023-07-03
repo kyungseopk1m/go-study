@@ -12,8 +12,3 @@ require (
 	google.golang.org/grpc v1.56.1 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 )
-
-//protoc -I=. \
-//	    --go_out . --go_opt paths=source_relative \
-//	    --go-grpc_out . --go-grpc_opt paths=source_relative \
-//	    protos/v1/user/user.proto
