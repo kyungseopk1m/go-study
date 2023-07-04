@@ -110,4 +110,6 @@ fabric.properties
 */.DS_Store
 */**/.DS_Store
 
+.env
+
 # End of https://www.toptal.com/developers/gitignore/api/intellij
