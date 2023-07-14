@@ -1,4 +1,4 @@
-module github.com/dojinkimm/go-grpc-example
+module github.com/kyungseopk1m/go-study/legacy
 
 go 1.20
 
