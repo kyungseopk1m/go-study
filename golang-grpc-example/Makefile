@@ -11,5 +11,7 @@ generate:
 run:
 	@go run cmd/main.go
 
-test: generate
-	go test ./... -v
+test:
+	go test test/greeter_test.go -v
+
+.PHONY: all test clean
