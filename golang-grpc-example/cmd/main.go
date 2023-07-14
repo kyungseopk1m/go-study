@@ -18,7 +18,7 @@ func main() {
 	grpcapi.RegisterGreeterServiceServer(grpcServer, &handler.GreeterHandler{})
 
 	log.Println("Grpc Server will be start..")
-	if err := grpcServer.Server(lis); err != nil {
+	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatal("An error has occurred while retriving on launch: ", err)
 	}
 }

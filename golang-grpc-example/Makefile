@@ -1,11 +1,15 @@
 # Makefile
 
 init:
-	go get github.com/golang/protobuf/protoc-gen-go@v1.5.2
-	go mod download
+	@go install github.com/smartystreets/goconvey
+	@go install github.com/golang/protobuf/protoc-gen-go
+	@go mod download
 
 generate:
-	go generate ./...
+	@go generate ./...
 
-run: generate
+run:
 	@go run cmd/main.go
+
+test: generate
+	go test ./... -v
